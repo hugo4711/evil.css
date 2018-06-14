@@ -1,11 +1,20 @@
-/* rotate the entire page 180 degrees. the rule that started it all. disabled by default because it's not very, um, subtle */
-/*body {
-    -webkit-transform: rotate(180deg) !important; /* Chrome, Safari 3.1+ */
-    -moz-transform: rotate(180deg) !important; /* Firefox 3.5-15 */
-    -ms-transform: rotate(180deg) !important; /* IE 9 */
-    -o-transform: rotate(180deg) !important; /* Opera 10.50-12.00 */
-    transform: rotate(180deg) !important; /* Firefox 16+, IE 10+, Opera 12.10+ */
-}*/
+/* rotate the entire page 23 degrees. the rule that started it all. enabled by default because it's not very, um, subtle */
+body {
+    -webkit-transform: rotate(23deg) !important; /* Chrome, Safari 3.1+ */
+    -moz-transform: rotate(23deg) !important; /* Firefox 3.5-15 */
+    -ms-transform: rotate(23deg) !important; /* IE 9 */
+    -o-transform: rotate(23deg) !important; /* Opera 10.50-12.00 */
+    transform: rotate(23deg) !important; /* Firefox 16+, IE 10+, Opera 12.10+ */
+    
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20vw;
+}
 
 /* rotate *some* images 180 degrees */
 img[src*="7"] {
